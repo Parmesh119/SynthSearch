@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, FormEvent } from 'react'
 import { useRouter } from 'next/navigation'
+import Footer from '../components/Footer'
 
 export default function Start() {
   const [search, setSearch] = useState('')

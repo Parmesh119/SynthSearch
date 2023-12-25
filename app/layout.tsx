@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,12 +17,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <head>
       <link rel="icon" type="image/x-icon" className="rounded-full" href="https://i.ibb.co/ckCZycR/Synth-Search.png" />
       </head>
       <Navbar />
-      <body>{children}</body>
+      <body>
+        {children}
+      </body>
     </html>
   )
 }
