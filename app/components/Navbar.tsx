@@ -25,6 +25,7 @@ const Navbar = () => {
                             </div>
                             <Link href="/partner" className="text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Become Partner</Link>
                             <Link href="/get-start" className="text-black rounded-md px-3 py-2 text-sm font-medium bg-white hover:bg-sky-900 hover:text-white" aria-current="page">Get Start</Link>
+                            <Link href="/login" className="text-black rounded-md px-3 py-2 text-sm font-medium bg-white hover:bg-sky-900 hover:text-white" aria-current="page">Login</Link>
                         </div>
                     </div>
                 </nav>
