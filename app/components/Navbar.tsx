@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Footer from '../components/Footer'
+import contact from './contact';
 const Navbar = () => {
+
     return (
         <html lang="en">
             <body>
@@ -17,15 +19,16 @@ const Navbar = () => {
                                         <Link href="/history" className="text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">History</Link>
                                         <Link href="/discuss" className=" text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Discuss</Link>
                                         <Link href="/about" className=" text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">About</Link>
+                                        {/* <Link href="/contact" className=" text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Contact</Link> */}
                                         <Link href="/contact" className=" text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Contact</Link>
-                                        <Link href="/support" className="text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Support</Link>
                                         <Link href="/pricing" className="text-black rounded-md px-3 py-2 text-sm font-medium bg-white hover:bg-sky-900 hover:text-white" aria-current="page">Pricing</Link>
                                     </div>
                                 </div>
                             </div>
-                            <Link href="/partner" className="text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Become Partner</Link>
-                            <Link href="/get-start" className="text-black rounded-md px-3 py-2 text-sm font-medium bg-white hover:bg-sky-900 hover:text-white" aria-current="page">Get Start</Link>
-                            <Link href="/login" className="text-black rounded-md px-3 py-2 text-sm font-medium bg-white hover:bg-sky-900 hover:text-white" aria-current="page">Login</Link>
+                            <div className="space-x-2">
+                                <Link href="/get-start" className="text-black rounded-md px-3 py-2 text-sm font-medium bg-white hover:bg-sky-900 hover:text-white" aria-current="page">Get Start</Link>
+                                <Link href="/login" className="text-black rounded-md px-3 py-2 text-sm font-medium bg-white hover:bg-sky-900 hover:text-white" aria-current="page">Login</Link>
+                            </div>
                         </div>
                     </div>
                 </nav>
