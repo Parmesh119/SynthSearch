@@ -2,7 +2,9 @@ import Link from 'next/link'
 export default function Login() {
     return (
         <>
-            <div className="flex justify-center items-center h-[650px] bg-stone-300" >
+            <div className="flex justify-center items-center h-[650px] bg-stone-300" style={{
+                height: "100vh"
+            }}>
                 <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-md">
                     <h2 className="text-3xl font-bold mb-6 text-center text-white">
                         <span className="bg-gradient-to-r text-transparent from-blue-500 to-purple-500 bg-clip-text">
